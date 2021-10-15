@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Photo Booth Strips with Lightbox</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Photo Booth Strips with Lightbox 2 Integration"
+    />
+    <meta
+      name="keywords"
+      content="photo booth, strips, photo strip, css3, rotation, scroll, thumbs, swipe, touch, jquery, mobile, lightbox"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./css/style9.css" />
+    <script type="text/javascript" src="js/modernizr.custom.52731.js"></script>
+    <link rel="stylesheet" href="css/stilos.css" />
+    <!--[if lte IE 8
+      ]><style>
+        .main {
+          display: none;
+        }
+        .support-note .note-ie {
+          display: block;
+        }
+      </style><!
+    [endif]-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__contenedor">
+        <div class="header__logo zoom-2">
+          <!-- <img src="images/logoamore3.png" alt="logo" /> -->
+          <img src="images/wifi.gif" alt="logo" />
+        </div>
+        <nav class="header__navegacion">
+          <ul class="header__lista">
+            <li class="header__item">
+              <a href="index.html" class="header__link">Inicio🏠</a>
+            </li>
+            <li class="header__item">
+              <a href="mensaje.html" class="header__link">Mensaje📧</a>
+            </li>
+            <li class="header__item">
+              <a href="fotos.html" class="header__link">Fotos📱</a>
+            </li>
+            <li class="header__item">
+              <a href="sorpresa.html" class="header__link">Sorpresa🎁</a>
+            </li>
+          </ul>
+          <i class="fas fa-bars header__icon fa-2x"></i>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <!-- Codrops top bar -->
+      <!-- <div class="codrops-top">
+                <a href="index.html">
+                    <strong>&laquo; Atras</strong>
+                </a>
+                <span class="right">
+                </span>
+                <div class="clr"></div>
+            </div> -->
+      <!--/ Codrops top bar -->
+
+      <header>
+        <h1>FOTOS</h1>
+        <h2>
+          💘 Mi corazon + Tu corazon 💗 <br />
+          <strong>Mucho amoooor</strong>
+        </h2>
+
+        <div class="support-note">
+          <!-- let's check browser support with modernizr -->
+          <!--span class="no-cssanimations"></span-->
+          <span class="no-csstransforms"></span>
+          <!--span class="no-csstransforms3d"></span-->
+          <!--span class="no-csstransitions"></span-->
+          <span class="no-generatedcontent"></span>
+          <span class="note-ie"></span>
+        </div>
+      </header>
+
+      <!-- <section id="main" class="main">
+				
+				<div class="pb-wrapper pb-wrapper-1">
+					<div class="pb-scroll">
+						<ul class="pb-strip">
+				
+				<div class="pb-wrapper pb-wrapper-2">
+					<div class="pb-scroll">
+						<ul class="pb-strip">
+							<li><a href="images/gif1.gif"  width="150" height="160" rel=lightbox[album2] title="Serenity"><img src="images/gif1.gif" width="150" height="160" /></a></li>
+							<li></li>
+						</ul>
+					</div>	
+
+				</div>
+				
+				<div class="pb-wrapper pb-wrapper-3">
+					<div class="pb-scroll">
+						<ul class="pb-strip">
+							<li>
+							<li><a href="images/large/10.jpg" rel="lightbox[album3]" title="Sunshine"><img src="images/small/10.jpg" /></a></li>
+							<li><a href="images/large/9.jpg" rel="lightbox[album3]" title="Summer"><img src="images/small/9.jpg" /></a></li>
+
+							<li><a href="images/large/8.jpg" rel="lightbox[album3]" title="Softness"><img src="images/small/8.jpg" /></a></li>
+							<li><a href="images/large/4.jpg" rel="lightbox[album3]" title="Adorable"><img src="images/small/4.jpg" /></a></li>
+							<li><a href="images/large/6.jpg" rel="lightbox[album3]" title="Forever"><img src="images/small/6.jpg" /></a></li>
+							<li><a href="images/large/7.jpg" rel="lightbox[album3]" title="Silence"><img src="images/small/7.jpg" /></a></li>
+							<li><a href="images/large/11.jpg" rel="lightbox[album3]" title="Love"><img src="images/small/11.jpg" /></a></li>
+						</ul>
+					</div>
+
+				</div>
+				
+				<div class="pb-wrapper pb-wrapper-4">
+					<div class="pb-scroll">
+						<ul class="pb-strip">
+							<li><a href="images/large/8.jpg" rel="lightbox[album4]" title="Summer"><img src="images/small/8.jpg" /></a></li>
+							<li><a href="images/large/1.jpg" rel="lightbox[album4]" title="Adorable"><img src="images/small/1.jpg" /></a></li>
+							<li><a href="images/large/5.jpg" rel="lightbox[album4]" title="Forever"><img src="images/small/5.jpg" /></a></li>
+							<li><a href="images/large/3.jpg" rel="lightbox[album4]" title="Silence"><img src="images/small/3.jpg" /></a></li>
+							<li><a href="images/large/6.jpg" rel="lightbox[album4]" title="Love"><img src="images/small/6.jpg" /></a></li>
+						</ul>
+					</div>
+					<h3 class="pb-title">Happiness is a direction, not a destination.</h3>
+				</div>
+				
+			</section> -->
+      <section class="principal">
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__imagen">
+            <img src="./venecia.jpg" alt="" />
+            <p class="card__photos">Fotos</p>
+            <p class="card__fecha">
+              4 <br />
+              <span> JUL </span>
+            </p>
+          </div>
+          <div class="card__info">
+            <h2>Conoce Venecia</h2>
+            <h3 class="card__subtitulo">La ciudad del amor</h3>
+            <p class="card__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
+              nisi, consequuntur voluptates laborum fuga veniam labore facilis
+              blanditiis. Hic suscipit
+            </p>
+            <p class="card__feed">
+              <small>
+                <i class="fas fa-clock"></i> 6 min atrás &nbsp; &nbsp; &nbsp;
+                <i class="fas fa-comment"></i> 39 comentarios</small
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <embed src="musica.mp3" hidden="true" loop="true" />
+  </body>
+</html>

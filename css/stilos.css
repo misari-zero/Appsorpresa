@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&effect=shadow-multiple");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+:root {
+  --color-primario: #e84d3b;
+  --crecer: 1;
+}
+
+.header {
+  height: 60px;
+  background: -webkit-linear-gradient(left, var(--color-primario), #ee9389);
+  display: flex;
+  box-shadow: #888 0px 0px 20px;
+}
+
+.header__contenedor {
+  display: flex;
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  /* width: 200px; */
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  /* padding:  20px 0; */
+  border-radius: 50%;
+  background: -webkit-linear-gradient(top, pink, orange);
+  /* Cuando la posición es absoluta, es recomendable que el padre del elemento 
+    tenga posición relativa para que se mueva respecto de éste */
+  /* Cuando la posición es absoluta,
+    Los elementos hermanos no respetan la posioción original del elemento
+    que se está moviendo */
+  /* position: absolute; */
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: all 1s ease-in;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  box-shadow: pink 0px 0px 20px;
+}
+
+.header__logo:hover {
+  transform: scale(var(--crecer));
+  margin-top: 130px;
+}
+.zoom-2 {
+  --crecer: 5;
+}
+
+.header__logo img {
+  height: 100%;
+}
+
+.header__navegacion {
+  flex: 1;
+  display: flex;
+}
+
+.header__lista {
+  flex: 1;
+  list-style: none;
+  display: flex;
+}
+
+.header__item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.header__item:hover {
+  background-color: var(--color-primario);
+  flex: 1.4;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.header__icon {
+  display: none;
+  color: white;
+}
+
+/* main {
+  width: 100%;
+  background: radial-gradient(shape size at position, start-color, last-color);
+} */
+/* 
+screen=> para la pantalla del dispositivo
+print=> para modo de impresion
+speech=> para los lectores de páginas (accesibilidad)
+all=> para todos los medias anteriores
+*/
+
+main {
+  width: 100%;
+  height: 100%;
+  /* background: radial-gradient(shape size at position, start-color, last-color); */
+}
+
+div.shake-slow {
+  display: flex;
+  border: 3px dashed blueviolet;
+  width: 10%;
+  margin: auto;
+  justify-content: center;
+}
+
+img.imagen {
+  border: 1px solid cornflowerblue;
+}
+
+span.apodo{
+  text-align: center;
+}
+
+footer {
+  background: #333;
+}
+.footer_parrafo {
+  color: #bababa;
+}
